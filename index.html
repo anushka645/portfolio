@@ -9,17 +9,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Overlay start -->
+    <div class="overlay">
+
+    </div>
+    <!-- Overlay end -->
     <div class="main">
+        <!-- Header start -->
+        <header class="header">
+            <div class="container">
+                <div class="row flex-end">
+                    <button type="button" class="nav-toggler">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <div class="nav-inner">
+                            <ul>
+                                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                                <li><a href="#about" class="nav-item link-item">About</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
         <!-- Home section start -->
-        <section class="home-section align-items-center hidden">
+        <section class="home-section align-items-center active" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="home-text">
                         <p>Hello I'm</p>
                         <h1>Anushka Gupta</h1>
                         <h2>Frontend Web Developer</h2>
-                        <a class="btn" href="">More about me</a>
-                        <a class="btn" href="">Portfolio</a>
+                        <a class="btn link-item" href="#about">More about me</a>
+                        <a class="btn link-item" href="#portfolio">Portfolio</a>
                     </div>
                     <div class="home-img">
                         <div class="img-box">
@@ -31,7 +57,7 @@
         </section>
         <!-- Home section end -->
         <!-- About section start -->
-        <section class="about-section section-padding hidden">
+        <section class="about-section section-padding" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -40,7 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="about-img">
-                        <div class="img-box"><img src="profile.jpeg" alt="profile-image"></div>
+                        <div class="img-box"><img src="/images/profile.jpeg" alt="profile-image"></div>
                     </div>
                     <div class="about-text">
                         <p>I am a 3rd-year Computer Science Engineering student from Medi-Caps University , Indore. I have always aimed to explore different strands of technology;
@@ -107,15 +133,15 @@
                             </div>
                         </div>
                         <!-- Experience Ends -->
-                        <a class="btn" href="">Download CV</a>
-                        <a class="btn" href="">Contact Me</a>
+                        <a class="btn" href="AnushkaGuptaResume.pdf" target="__blank">Download CV</a>
+                        <a href="#contact" class="btn" >Contact Me</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About section ends -->
         <!-- Portfolio section start -->
-        <section class="portfolio-section section-padding">
+        <section class="portfolio-section section-padding" id="portfolio">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title">Recent Work</h2>
@@ -237,6 +263,52 @@
             </div>
         </section>
         <!-- Portfolio section ends -->
+        <!-- Contact Section Start -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Name" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Email" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Message" class="input-control" required></textarea>
+                                </div>
+                                <div class="summit-btn">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <h3>Email</h3>
+                            <p>anushkagupta645@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Follow Me</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/anushka-gupta-0179311b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
     </div>
     <!-- Portfolio Item details Popup start -->
     <div class="portfolio-popup">
