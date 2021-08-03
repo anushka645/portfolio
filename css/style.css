@@ -199,7 +199,14 @@ button{
 /* -----------
     Overlay
     ------------ */
-
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
 /* ----------- 
     Header 
   ------------*/
@@ -468,6 +475,10 @@ button{
 .about-text .tab-content{
     padding: 40px 0;
     display: none;
+}
+.about-text .tab-content ul li{
+    padding: 10px;
+    list-style: disc;
 }
 .about-text .tab-content.active{
     display: block;
