@@ -853,13 +853,21 @@ Contact Section
 
 }
 @media(max-width:575px){
+    .home-img .img-box{
+        max-width: 200px;
+    }
     .about-img .img-box img{
-        height: 40%;
-        width: 35%;
+        max-height: 40%;
+        max-width: 35%;
+        border:1px solid var(--white-alpha-40);
+    }
+    .about-img{
+        padding: 0;
     }
     .about-img .img-box{
+        background: border-box;
+        border: none;
         text-align: center;
-        border:none;
     }
 
     .section-title h2,
