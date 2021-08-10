@@ -853,6 +853,9 @@ Contact Section
 
 }
 @media(max-width:575px){
+    .home-section{
+        padding: 55px 0;
+    }
     .home-img .img-box{
         max-width: 200px;
     }
