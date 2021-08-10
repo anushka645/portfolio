@@ -853,6 +853,15 @@ Contact Section
 
 }
 @media(max-width:575px){
+    .about-img .img-box img{
+        height: 40%;
+        width: 35%;
+    }
+    .about-img .img-box{
+        text-align: center;
+        border:none;
+    }
+
     .section-title h2,
     .header .nav-inner ul li a{
         font-size: 35px;
